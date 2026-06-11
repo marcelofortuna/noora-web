@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noora — Política de Privacidade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --noche: #2A1A4A;
+      --gold: #E6B45C;
+      --gold-soft: rgba(230, 180, 92, 0.15);
+      --text: #EDE8F5;
+      --text-muted: #9A8DB8;
+      --surface: rgba(255,255,255,0.05);
+      --border: rgba(154,141,184,0.2);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--noche);
+      color: var(--text);
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 48px 24px 32px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: 'Fraunces', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .logo-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 24px 24px 0;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active,
+    .lang-btn:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: var(--gold-soft);
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .policy { display: none; }
+    .policy.active { display: block; }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+      margin: 40px 0 12px;
+    }
+
+    p { margin-bottom: 16px; color: var(--text); }
+
+    ul {
+      margin: 0 0 16px 20px;
+      color: var(--text);
+    }
+
+    ul li { margin-bottom: 8px; }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(230,180,92,0.3);
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--gold); }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .contact-box p { margin: 0; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 26px; }
+      .container { padding: 32px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Noora</div>
+  <div class="logo-sub">Bible &amp; Prayer</div>
+</header>
+
+<div class="lang-switcher">
+  <button class="lang-btn active" onclick="setLang('pt')">Português</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('es')">Español</button>
+</div>
+
+<div class="container">
+
+  <!-- PORTUGUÊS -->
+  <div class="policy active" id="policy-pt">
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Última atualização: 11 de junho de 2025</p>
+
+    <p>Esta Política de Privacidade descreve como o aplicativo <strong>Noora: Bible &amp; Prayer</strong> coleta, usa e protege suas informações. Ao usar o Noora, você concorda com os termos descritos aqui.</p>
+
+    <h2>1. Responsável pelo tratamento</h2>
+    <p>O Noora é desenvolvido e operado por <strong>Marcelo Fortuna Neves</strong>.<br/>
+    Contato: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+
+    <h2>2. Dados que coletamos</h2>
+    <p>Coletamos apenas o necessário para o funcionamento do app:</p>
+    <ul>
+      <li><strong>Conta:</strong> e-mail e senha (login por e-mail) ou identificador Apple (Sign in with Apple). Não armazenamos sua senha Apple.</li>
+      <li><strong>Perfil:</strong> nome de exibição escolhido por você.</li>
+      <li><strong>Progresso:</strong> dias concluídos nas jornadas de leitura.</li>
+      <li><strong>Diário:</strong> anotações pessoais que você opta por registrar. O diário é sempre opcional.</li>
+      <li><strong>Preferências:</strong> idioma selecionado no app.</li>
+      <li><strong>Assinatura:</strong> status de assinante (gerenciado pela Apple App Store).</li>
+    </ul>
+    <p>Não coletamos dados de localização, contatos, câmera ou microfone.</p>
+
+    <h2>3. Como usamos seus dados</h2>
+    <ul>
+      <li>Autenticar seu acesso ao app.</li>
+      <li>Salvar e sincronizar seu progresso entre dispositivos.</li>
+      <li>Personalizar sua experiência (idioma, histórico de leitura).</li>
+      <li>Gerenciar sua assinatura e acesso ao conteúdo premium.</li>
+    </ul>
+    <p>Não vendemos, alugamos nem compartilhamos seus dados com terceiros para fins publicitários.</p>
+
+    <h2>4. Serviços de terceiros</h2>
+    <p>O Noora utiliza os seguintes serviços para funcionar:</p>
+    <ul>
+      <li><strong>Supabase</strong> — banco de dados e autenticação. <a href="https://supabase.com/privacy" target="_blank">Política de privacidade</a></li>
+      <li><strong>Apple App Store</strong> — distribuição e pagamentos. <a href="https://www.apple.com/legal/privacy/" target="_blank">Política de privacidade</a></li>
+      <li><strong>Google Cloud Text-to-Speech</strong> — geração de áudio premium (os textos enviados são os conteúdos dos módulos, não dados pessoais seus). <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Política de privacidade</a></li>
+    </ul>
+
+    <h2>5. Armazenamento e segurança</h2>
+    <p>Seus dados são armazenados em servidores seguros fornecidos pela Supabase, com criptografia em trânsito (HTTPS/TLS) e em repouso. O áudio premium é armazenado em bucket privado com acesso por links temporários assinados.</p>
+
+    <h2>6. Seus direitos</h2>
+    <p>Você tem direito a:</p>
+    <ul>
+      <li>Acessar os dados que temos sobre você.</li>
+      <li>Corrigir informações incorretas.</li>
+      <li>Solicitar a exclusão da sua conta e de todos os seus dados.</li>
+      <li>Exportar seus dados (portabilidade).</li>
+    </ul>
+    <p>Para exercer qualquer desses direitos, entre em contato: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+
+    <h2>7. Retenção de dados</h2>
+    <p>Mantemos seus dados enquanto sua conta estiver ativa. Após solicitar a exclusão, removemos seus dados em até 30 dias, exceto onde a lei exigir retenção por prazo maior.</p>
+
+    <h2>8. Crianças</h2>
+    <p>O Noora não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente dados de menores. Se você acredita que coletamos dados de uma criança, entre em contato para que possamos removê-los imediatamente.</p>
+
+    <h2>9. Alterações nesta política</h2>
+    <p>Podemos atualizar esta política periodicamente. Notificaremos mudanças significativas por e-mail ou aviso dentro do app. O uso continuado após as alterações implica aceitação.</p>
+
+    <div class="contact-box">
+      <p>Dúvidas ou solicitações? Fale conosco:<br/>
+      <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="policy" id="policy-en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 11, 2025</p>
+
+    <p>This Privacy Policy describes how <strong>Noora: Bible &amp; Prayer</strong> collects, uses, and protects your information. By using Noora, you agree to the practices described here.</p>
+
+    <h2>1. Data Controller</h2>
+    <p>Noora is developed and operated by <strong>Marcelo Fortuna Neves</strong>.<br/>
+    Contact: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+
+    <h2>2. Data We Collect</h2>
+    <p>We collect only what is necessary for the app to function:</p>
+    <ul>
+      <li><strong>Account:</strong> email and password (email login) or Apple identifier (Sign in with Apple). We do not store your Apple password.</li>
+      <li><strong>Profile:</strong> display name chosen by you.</li>
+      <li><strong>Progress:</strong> completed days in reading journeys.</li>
+      <li><strong>Journal:</strong> personal notes you choose to write. The journal is always optional.</li>
+      <li><strong>Preferences:</strong> language selected in the app.</li>
+      <li><strong>Subscription:</strong> subscriber status (managed by Apple App Store).</li>
+    </ul>
+    <p>We do not collect location data, contacts, camera, or microphone access.</p>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>Authenticate your access to the app.</li>
+      <li>Save and sync your progress across devices.</li>
+      <li>Personalize your experience (language, reading history).</li>
+      <li>Manage your subscription and access to premium content.</li>
+    </ul>
+    <p>We do not sell, rent, or share your data with third parties for advertising purposes.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Noora uses the following services to operate:</p>
+    <ul>
+      <li><strong>Supabase</strong> — database and authentication. <a href="https://supabase.com/privacy" target="_blank">Privacy policy</a></li>
+      <li><strong>Apple App Store</strong> — distribution and payments. <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy policy</a></li>
+      <li><strong>Google Cloud Text-to-Speech</strong> — premium audio generation (text sent is module content, not your personal data). <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Privacy policy</a></li>
+    </ul>
+
+    <h2>5. Storage and Security</h2>
+    <p>Your data is stored on secure servers provided by Supabase, with encryption in transit (HTTPS/TLS) and at rest. Premium audio is stored in a private bucket accessible only via temporary signed URLs.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the data we hold about you.</li>
+      <li>Correct inaccurate information.</li>
+      <li>Request deletion of your account and all associated data.</li>
+      <li>Export your data (portability).</li>
+    </ul>
+    <p>To exercise any of these rights, contact us: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+
+    <h2>7. Data Retention</h2>
+    <p>We retain your data while your account is active. After a deletion request, we remove your data within 30 days, except where law requires longer retention.</p>
+
+    <h2>8. Children</h2>
+    <p>Noora is not directed at children under 13. We do not knowingly collect data from minors. If you believe we have collected data from a child, please contact us so we can remove it immediately.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy periodically. We will notify you of significant changes by email or in-app notice. Continued use after changes implies acceptance.</p>
+
+    <div class="contact-box">
+      <p>Questions or requests? Contact us:<br/>
+      <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+    </div>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div class="policy" id="policy-es">
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Última actualización: 11 de junio de 2025</p>
+
+    <p>Esta Política de Privacidad describe cómo <strong>Noora: Bible &amp; Prayer</strong> recopila, usa y protege tu información. Al usar Noora, aceptas las prácticas descritas aquí.</p>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <p>Noora es desarrollado y operado por <strong>Marcelo Fortuna Neves</strong>.<br/>
+    Contacto: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+
+    <h2>2. Datos que recopilamos</h2>
+    <p>Recopilamos solo lo necesario para el funcionamiento de la app:</p>
+    <ul>
+      <li><strong>Cuenta:</strong> correo y contraseña (inicio de sesión por correo) o identificador de Apple (Sign in with Apple). No almacenamos tu contraseña de Apple.</li>
+      <li><strong>Perfil:</strong> nombre de visualización elegido por ti.</li>
+      <li><strong>Progreso:</strong> días completados en las jornadas de lectura.</li>
+      <li><strong>Diario:</strong> notas personales que decides escribir. El diario es siempre opcional.</li>
+      <li><strong>Preferencias:</strong> idioma seleccionado en la app.</li>
+      <li><strong>Suscripción:</strong> estado de suscriptor (gestionado por Apple App Store).</li>
+    </ul>
+    <p>No recopilamos datos de ubicación, contactos, cámara ni micrófono.</p>
+
+    <h2>3. Cómo usamos tus datos</h2>
+    <ul>
+      <li>Autenticar tu acceso a la app.</li>
+      <li>Guardar y sincronizar tu progreso entre dispositivos.</li>
+      <li>Personalizar tu experiencia (idioma, historial de lectura).</li>
+      <li>Gestionar tu suscripción y acceso al contenido premium.</li>
+    </ul>
+    <p>No vendemos, alquilamos ni compartimos tus datos con terceros con fines publicitarios.</p>
+
+    <h2>4. Servicios de terceros</h2>
+    <p>Noora utiliza los siguientes servicios para funcionar:</p>
+    <ul>
+      <li><strong>Supabase</strong> — base de datos y autenticación. <a href="https://supabase.com/privacy" target="_blank">Política de privacidad</a></li>
+      <li><strong>Apple App Store</strong> — distribución y pagos. <a href="https://www.apple.com/legal/privacy/" target="_blank">Política de privacidad</a></li>
+      <li><strong>Google Cloud Text-to-Speech</strong> — generación de audio premium (el texto enviado es contenido de los módulos, no tus datos personales). <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Política de privacidad</a></li>
+    </ul>
+
+    <h2>5. Almacenamiento y seguridad</h2>
+    <p>Tus datos se almacenan en servidores seguros proporcionados por Supabase, con cifrado en tránsito (HTTPS/TLS) y en reposo. El audio premium se almacena en un bucket privado accesible solo mediante URLs firmadas temporales.</p>
+
+    <h2>6. Tus derechos</h2>
+    <p>Tienes derecho a:</p>
+    <ul>
+      <li>Acceder a los datos que tenemos sobre ti.</li>
+      <li>Corregir información incorrecta.</li>
+      <li>Solicitar la eliminación de tu cuenta y todos tus datos.</li>
+      <li>Exportar tus datos (portabilidad).</li>
+    </ul>
+    <p>Para ejercer cualquiera de estos derechos, contáctanos: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+
+    <h2>7. Retención de datos</h2>
+    <p>Conservamos tus datos mientras tu cuenta esté activa. Tras una solicitud de eliminación, eliminamos tus datos en un plazo de 30 días, excepto cuando la ley exija una retención mayor.</p>
+
+    <h2>8. Menores</h2>
+    <p>Noora no está dirigido a menores de 13 años. No recopilamos intencionalmente datos de menores. Si crees que hemos recopilado datos de un menor, contáctanos para eliminarlos de inmediato.</p>
+
+    <h2>9. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política periódicamente. Notificaremos cambios significativos por correo electrónico o aviso dentro de la app. El uso continuado tras los cambios implica aceptación.</p>
+
+    <div class="contact-box">
+      <p>¿Preguntas o solicitudes? Contáctanos:<br/>
+      <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Marcelo Fortuna Neves · Noora: Bible &amp; Prayer · <a href="mailto:hello@getnoora.app">hello@getnoora.app</a>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.policy').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('policy-' + lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
