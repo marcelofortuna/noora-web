@@ -1,388 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noora — Política de Privacidade</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --noche: #2A1A4A;
-      --gold: #E6B45C;
-      --gold-soft: rgba(230, 180, 92, 0.15);
-      --text: #EDE8F5;
-      --text-muted: #9A8DB8;
-      --surface: rgba(255,255,255,0.05);
-      --border: rgba(154,141,184,0.2);
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--noche);
-      color: var(--text);
-      font-family: 'Hanken Grotesk', sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-
-    header {
-      padding: 48px 24px 32px;
-      text-align: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo {
-      font-family: 'Fraunces', serif;
-      font-size: 28px;
-      font-weight: 600;
-      color: var(--gold);
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-
-    .logo-sub {
-      font-size: 13px;
-      color: var(--text-muted);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .lang-switcher {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      padding: 24px 24px 0;
-    }
-
-    .lang-btn {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-      font-family: 'Hanken Grotesk', sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 6px 16px;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-btn.active,
-    .lang-btn:hover {
-      border-color: var(--gold);
-      color: var(--gold);
-      background: var(--gold-soft);
-    }
-
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    .policy { display: none; }
-    .policy.active { display: block; }
-
-    h1 {
-      font-family: 'Fraunces', serif;
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 1.2;
-      color: var(--text);
-      margin-bottom: 8px;
-    }
-
-    .updated {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-family: 'Fraunces', serif;
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--gold);
-      margin: 40px 0 12px;
-    }
-
-    p { margin-bottom: 16px; color: var(--text); }
-
-    ul {
-      margin: 0 0 16px 20px;
-      color: var(--text);
-    }
-
-    ul li { margin-bottom: 8px; }
-
-    a {
-      color: var(--gold);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(230,180,92,0.3);
-      transition: border-color 0.2s;
-    }
-
-    a:hover { border-color: var(--gold); }
-
-    .contact-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-      margin-top: 40px;
-    }
-
-    .contact-box p { margin: 0; }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      border-top: 1px solid var(--border);
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-
-    @media (max-width: 480px) {
-      h1 { font-size: 26px; }
-      .container { padding: 32px 20px 60px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Privacy Policy — Noora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--noche:#2A1A4A;--halo:#E6B45C;--ink:#231a33;--muted:#6b6478;--line:#eadff0;--tint:#f7f2fb;}
+  *{box-sizing:border-box;} html{-webkit-text-size-adjust:100%;}
+  body{margin:0;background:#fff;color:var(--ink);font-family:'Hanken Grotesk',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:17px;line-height:1.7;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 96px;}
+  header.brand{background:var(--noche);margin:0 0 8px;padding:44px 0 28px;}
+  header.brand .inner{max-width:760px;margin:0 auto;padding:0 24px;}
+  header.brand .kicker{color:var(--halo);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin:0 0 16px;}
+  .lang-switch{display:flex;gap:8px;flex-wrap:wrap;}
+  .lang-btn{font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:600;color:#e9e1f5;background:rgba(255,255,255,.08);border:1px solid rgba(230,180,92,.35);border-radius:999px;padding:7px 16px;cursor:pointer;transition:all .15s;}
+  .lang-btn:hover{background:rgba(255,255,255,.16);}
+  .lang-btn.active{background:var(--halo);color:var(--noche);border-color:var(--halo);}
+  .policy{display:none;} .policy.active{display:block;}
+  h1{font-family:'Fraunces',Georgia,serif;color:var(--noche);font-weight:600;font-size:32px;line-height:1.15;margin:34px 0 4px;}
+  h2{font-family:'Fraunces',Georgia,serif;color:var(--noche);font-weight:600;font-size:24px;margin:44px 0 14px;padding-top:16px;border-top:2px solid var(--halo);}
+  h3{font-family:'Fraunces',Georgia,serif;color:var(--noche);font-weight:600;font-size:19px;margin:26px 0 8px;}
+  p{margin:14px 0;} a{color:#7a3fb0;text-decoration:underline;text-underline-offset:2px;}
+  strong{color:var(--noche);} hr{border:none;border-top:1px solid var(--line);margin:36px 0;}
+  ul{padding-left:1.25em;margin:14px 0;} li{margin:6px 0;}
+  blockquote{margin:18px 0;padding:14px 18px;background:var(--tint);border-left:4px solid var(--halo);border-radius:0 10px 10px 0;color:#4a3d5c;}
+  blockquote p{margin:0;}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15.5px;}
+  th,td{text-align:left;padding:11px 12px;border:1px solid var(--line);vertical-align:top;}
+  thead th{background:var(--noche);color:#fff;font-weight:600;border-color:var(--noche);}
+  tbody tr:nth-child(even){background:#faf7fd;}
+  code{background:#f1ebf7;padding:1px 5px;border-radius:5px;font-size:.92em;}
+  footer{margin-top:56px;color:var(--muted);font-size:14px;text-align:center;}
+  @media (max-width:520px){body{font-size:16px;}h1{font-size:26px;}h2{font-size:21px;}table{font-size:14px;}th,td{padding:9px 8px;}}
+</style>
 </head>
 <body>
-
-<header>
-  <div class="logo">Noora</div>
-  <div class="logo-sub">Bible &amp; Prayer</div>
+<header class="brand">
+  <div class="inner">
+    <p class="kicker">Noora &middot; Bible &amp; Prayer</p>
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="pt" onclick="setLang('pt')">Português</button>
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn" data-lang="es" onclick="setLang('es')">Español</button>
+    </div>
+  </div>
 </header>
-
-<div class="lang-switcher">
-  <button class="lang-btn" onclick="setLang('pt')">Português</button>
-  <button class="lang-btn active" onclick="setLang('en')">English</button>
-  <button class="lang-btn" onclick="setLang('es')">Español</button>
+<main class="wrap">
+<div class="policy" id="policy-pt" lang="pt-BR">
+<h1>Política de Privacidade — Noora: Bíblia e Oração</h1>
+<p><strong>Última atualização:</strong> 18 de junho de 2026</p>
+<p>Esta Política de Privacidade descreve como o aplicativo <strong>Noora: Bíblia e Oração</strong> ("Noora", "aplicativo", "nós") coleta, usa, compartilha e protege seus dados pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — "LGPD")</strong>.</p>
+<p>Ao criar uma conta e usar o Noora, você concorda com as práticas descritas nesta Política.</p>
+<hr />
+<h2>1. Controlador dos dados</h2>
+<p>O controlador responsável pelo tratamento dos seus dados é:</p>
+<ul>
+<li><strong>Marcelo Neves</strong></li>
+<li>Contato: <strong>hello@getnoora.app</strong></li>
+</ul>
+<h2>2. Encarregado pelo tratamento de dados (DPO)</h2>
+<p>Para exercer seus direitos ou esclarecer dúvidas sobre privacidade, contate nosso Encarregado:</p>
+<ul>
+<li><strong>Marcelo Neves</strong> — <strong>hello@getnoora.app</strong></li>
+</ul>
+<hr />
+<h2>3. Quais dados coletamos</h2>
+<p><strong>Dados de conta e autenticação</strong></p>
+<ul>
+<li>E-mail e senha (no cadastro por e-mail); <strong>ou</strong></li>
+<li>Dados de login social, se você escolher entrar com <strong>Apple</strong> (incluindo o e-mail real ou o endereço de relay do recurso "Ocultar meu e-mail") ou com <strong>Google</strong> (nome e e-mail da conta Google).</li>
+</ul>
+<p><strong>Dados de perfil</strong></p>
+<ul>
+<li>Nome</li>
+<li>Foto de perfil (você seleciona uma imagem da galeria do seu dispositivo)</li>
+<li>Idioma preferido</li>
+</ul>
+<p><strong>Conteúdo criado por você — pode incluir DADO PESSOAL SENSÍVEL</strong></p>
+<ul>
+<li>Reflexões do diário</li>
+<li>Pedidos de oração</li>
+<li>Progresso nas jornadas e leituras</li>
+</ul>
+<blockquote>
+<p>Esses conteúdos podem revelar sua <strong>convicção religiosa</strong>, classificada como <strong>dado pessoal sensível</strong> pelo art. 11 da LGPD, e recebem proteção reforçada (ver Seção 5).</p>
+</blockquote>
+<p><strong>Oração personalizada (IA)</strong></p>
+<ul>
+<li>O texto que você escreve para gerar uma oração personalizada é enviado a um provedor de inteligência artificial (<strong>Anthropic</strong>, modelo Claude) para produzir a resposta. Esse texto pode conter dado sensível.</li>
+</ul>
+<p><strong>Dados de assinatura</strong></p>
+<ul>
+<li>Status e histórico da assinatura premium, processados por <strong>RevenueCat</strong> e <strong>Apple</strong>.</li>
+<li><strong>Não recebemos nem armazenamos dados de cartão ou de pagamento</strong> — esses dados ficam exclusivamente com a Apple.</li>
+</ul>
+<p><strong>Identificadores técnicos</strong></p>
+<ul>
+<li>Um identificador de usuário interno, gerado pelo sistema.</li>
+</ul>
+<p><strong>O que NÃO coletamos</strong></p>
+<ul>
+<li>Não utilizamos ferramentas de <strong>analytics de produto, rastreamento publicitário, attribution</strong> nem <strong>crash reporting</strong> de terceiros.</li>
+<li>Não rastreamos você entre aplicativos ou sites. Por isso, o Noora <strong>não</strong> exibe o pedido de permissão de rastreamento (ATT) da Apple.</li>
+</ul>
+<hr />
+<h2>4. Para que usamos seus dados (finalidades)</h2>
+<ul>
+<li>Criar e gerenciar sua conta;</li>
+<li>Fornecer as funcionalidades do app (Bíblia, jornadas, diário, oração, sequências/streaks);</li>
+<li>Gerar orações personalizadas, quando solicitado por você;</li>
+<li>Gerenciar sua assinatura premium;</li>
+<li>Prestar suporte e comunicar mudanças relevantes do serviço;</li>
+<li>Cumprir obrigações legais e regulatórias.</li>
+</ul>
+<hr />
+<h2>5. Bases legais do tratamento (arts. 7 e 11 da LGPD)</h2>
+<ul>
+<li><strong>Execução de contrato / procedimentos preliminares</strong> — para criar a conta, fornecer as funcionalidades e gerenciar a assinatura que você contratou;</li>
+<li><strong>Consentimento específico e destacado</strong> — para o tratamento de <strong>dados sensíveis</strong> (conteúdo que revela convicção religiosa, como diário e orações) e para o envio de texto à IA na <strong>oração personalizada</strong>;</li>
+<li><strong>Cumprimento de obrigação legal ou regulatória</strong>;</li>
+<li><strong>Legítimo interesse</strong> — para segurança e bom funcionamento do serviço, sem rastreamento ou perfilamento.</li>
+</ul>
+<blockquote>
+<p>Os <strong>dados sensíveis</strong> (convicção religiosa) são tratados <strong>exclusivamente mediante o seu consentimento específico e destacado</strong>, coletado no momento do cadastro e/ou do uso das funcionalidades correspondentes. Você pode <strong>revogar</strong> esse consentimento a qualquer momento (ver Seção 8); a revogação pode limitar ou impedir o uso de funcionalidades que dependem desse tratamento.</p>
+</blockquote>
+<hr />
+<h2>6. Compartilhamento e operadores</h2>
+<p>Compartilhamos dados <strong>apenas com os operadores estritamente necessários</strong> para operar o serviço, mediante contrato e obrigações de segurança:</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Finalidade</th>
+<th>Dados envolvidos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supabase</strong></td>
+<td>Banco de dados, autenticação e armazenamento</td>
+<td>Conta, perfil, conteúdo do usuário</td>
+</tr>
+<tr>
+<td><strong>Anthropic (Claude)</strong></td>
+<td>Geração da oração personalizada</td>
+<td>Texto enviado por você na oração</td>
+</tr>
+<tr>
+<td><strong>RevenueCat</strong></td>
+<td>Gestão de assinaturas</td>
+<td>Identificador e status de assinatura</td>
+</tr>
+<tr>
+<td><strong>Apple</strong></td>
+<td>Distribuição, login (Sign in with Apple) e pagamentos</td>
+<td>Conta/login, dados de pagamento (apenas com a Apple)</td>
+</tr>
+<tr>
+<td><strong>Google</strong></td>
+<td>Login (Sign in with Google), se você usar</td>
+<td>Nome e e-mail da conta Google</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Não vendemos seus dados</strong> e <strong>não os compartilhamos para fins de publicidade.</strong></p>
+<hr />
+<h2>7. Transferência internacional de dados</h2>
+<p>Alguns operadores acima estão localizados <strong>fora do Brasil</strong> (por exemplo, nos Estados Unidos). Ao usar o Noora, você está ciente de que seus dados poderão ser tratados em outros países, com a adoção de salvaguardas adequadas previstas na LGPD.</p>
+<hr />
+<h2>8. Seus direitos como titular (art. 18 da LGPD)</h2>
+<p>Você tem direito a:</p>
+<ul>
+<li>Confirmar a existência de tratamento;</li>
+<li>Acessar seus dados;</li>
+<li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
+<li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade;</li>
+<li>Portabilidade dos dados;</li>
+<li>Obter informação sobre compartilhamento;</li>
+<li><strong>Revogar o consentimento</strong> e solicitar a eliminação dos dados tratados com base nele;</li>
+<li><strong>Excluir sua conta</strong> e os dados associados.</li>
+</ul>
+<p><strong>Como exercer:</strong> diretamente no app (exclusão de conta) ou pelo e-mail <strong>hello@getnoora.app</strong>. Responderemos dentro dos prazos previstos na LGPD.</p>
+<hr />
+<h2>9. Exclusão de conta e de dados</h2>
+<p>Você pode <strong>excluir sua conta e os dados associados diretamente no aplicativo</strong> (em <strong>Perfil → Excluir conta</strong>). Após a exclusão, seus dados pessoais e conteúdos são eliminados em até <strong>30 dias</strong>, ressalvadas as hipóteses de guarda obrigatória por lei.</p>
+<hr />
+<h2>10. Período de retenção</h2>
+<p>Mantemos seus dados <strong>enquanto sua conta estiver ativa</strong> e pelo tempo necessário às finalidades desta Política. Encerrada a conta, os dados são eliminados conforme a Seção 9 (em até 30 dias), salvo obrigação legal de retenção.</p>
+<hr />
+<h2>11. Segurança</h2>
+<p>Adotamos medidas técnicas e organizacionais razoáveis para proteger seus dados, como criptografia em trânsito, controle de acesso e restrição de acesso aos operadores. Nenhum sistema é 100% seguro, mas trabalhamos para reduzir riscos.</p>
+<hr />
+<h2>12. Crianças e adolescentes</h2>
+<p>O Noora é destinado a usuários com <strong>13 anos ou mais</strong>. O tratamento de dados de crianças e adolescentes, quando ocorrer, observará o art. 14 da LGPD, exigindo <strong>consentimento específico e destacado de pelo menos um dos pais ou responsável</strong> quando aplicável.</p>
+<hr />
+<h2>13. Alterações nesta Política</h2>
+<p>Podemos atualizar esta Política periodicamente. Em caso de mudanças relevantes, avisaremos pelos meios disponíveis no app. A data de "Última atualização" no topo indica a versão vigente.</p>
+<hr />
+<h2>14. Contato</h2>
+<p>Dúvidas, solicitações ou reclamações sobre privacidade:</p>
+<ul>
+<li><strong>hello@getnoora.app</strong></li>
+</ul>
+<p>Você também pode contatar a <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> se entender que seus direitos não foram atendidos.</p>
 </div>
-
-<div class="container">
-
-  <!-- PORTUGUÊS -->
-  <div class="policy" id="policy-pt">
-    <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 11 de junho de 2025</p>
-
-    <p>Esta Política de Privacidade descreve como o aplicativo <strong>Noora: Bible &amp; Prayer</strong> coleta, usa e protege suas informações. Ao usar o Noora, você concorda com os termos descritos aqui.</p>
-
-    <h2>1. Responsável pelo tratamento</h2>
-    <p>O Noora é desenvolvido e operado por <strong>Marcelo Fortuna Neves</strong>.<br/>
-    Contato: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-
-    <h2>2. Dados que coletamos</h2>
-    <p>Coletamos apenas o necessário para o funcionamento do app:</p>
-    <ul>
-      <li><strong>Conta:</strong> e-mail e senha (login por e-mail) ou identificador Apple (Sign in with Apple). Não armazenamos sua senha Apple.</li>
-      <li><strong>Perfil:</strong> nome de exibição escolhido por você.</li>
-      <li><strong>Progresso:</strong> dias concluídos nas jornadas de leitura.</li>
-      <li><strong>Diário:</strong> anotações pessoais que você opta por registrar. O diário é sempre opcional.</li>
-      <li><strong>Preferências:</strong> idioma selecionado no app.</li>
-      <li><strong>Assinatura:</strong> status de assinante (gerenciado pela Apple App Store).</li>
-    </ul>
-    <p>Não coletamos dados de localização, contatos, câmera ou microfone.</p>
-
-    <h2>3. Como usamos seus dados</h2>
-    <ul>
-      <li>Autenticar seu acesso ao app.</li>
-      <li>Salvar e sincronizar seu progresso entre dispositivos.</li>
-      <li>Personalizar sua experiência (idioma, histórico de leitura).</li>
-      <li>Gerenciar sua assinatura e acesso ao conteúdo premium.</li>
-    </ul>
-    <p>Não vendemos, alugamos nem compartilhamos seus dados com terceiros para fins publicitários.</p>
-
-    <h2>4. Serviços de terceiros</h2>
-    <p>O Noora utiliza os seguintes serviços para funcionar:</p>
-    <ul>
-      <li><strong>Supabase</strong> — banco de dados e autenticação. <a href="https://supabase.com/privacy" target="_blank">Política de privacidade</a></li>
-      <li><strong>Apple App Store</strong> — distribuição e pagamentos. <a href="https://www.apple.com/legal/privacy/" target="_blank">Política de privacidade</a></li>
-      <li><strong>Google Cloud Text-to-Speech</strong> — geração de áudio premium (os textos enviados são os conteúdos dos módulos, não dados pessoais seus). <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Política de privacidade</a></li>
-    </ul>
-
-    <h2>5. Armazenamento e segurança</h2>
-    <p>Seus dados são armazenados em servidores seguros fornecidos pela Supabase, com criptografia em trânsito (HTTPS/TLS) e em repouso. O áudio premium é armazenado em bucket privado com acesso por links temporários assinados.</p>
-
-    <h2>6. Seus direitos</h2>
-    <p>Você tem direito a:</p>
-    <ul>
-      <li>Acessar os dados que temos sobre você.</li>
-      <li>Corrigir informações incorretas.</li>
-      <li>Solicitar a exclusão da sua conta e de todos os seus dados.</li>
-      <li>Exportar seus dados (portabilidade).</li>
-    </ul>
-    <p>Para exercer qualquer desses direitos, entre em contato: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-
-    <h2>7. Retenção de dados</h2>
-    <p>Mantemos seus dados enquanto sua conta estiver ativa. Após solicitar a exclusão, removemos seus dados em até 30 dias, exceto onde a lei exigir retenção por prazo maior.</p>
-
-    <h2>8. Crianças</h2>
-    <p>O Noora não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente dados de menores. Se você acredita que coletamos dados de uma criança, entre em contato para que possamos removê-los imediatamente.</p>
-
-    <h2>9. Alterações nesta política</h2>
-    <p>Podemos atualizar esta política periodicamente. Notificaremos mudanças significativas por e-mail ou aviso dentro do app. O uso continuado após as alterações implica aceitação.</p>
-
-    <div class="contact-box">
-      <p>Dúvidas ou solicitações? Fale conosco:<br/>
-      <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-    </div>
-  </div>
-
-  <!-- ENGLISH -->
-  <div class="policy active" id="policy-en">
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: June 11, 2025</p>
-
-    <p>This Privacy Policy describes how <strong>Noora: Bible &amp; Prayer</strong> collects, uses, and protects your information. By using Noora, you agree to the practices described here.</p>
-
-    <h2>1. Data Controller</h2>
-    <p>Noora is developed and operated by <strong>Marcelo Fortuna Neves</strong>.<br/>
-    Contact: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-
-    <h2>2. Data We Collect</h2>
-    <p>We collect only what is necessary for the app to function:</p>
-    <ul>
-      <li><strong>Account:</strong> email and password (email login) or Apple identifier (Sign in with Apple). We do not store your Apple password.</li>
-      <li><strong>Profile:</strong> display name chosen by you.</li>
-      <li><strong>Progress:</strong> completed days in reading journeys.</li>
-      <li><strong>Journal:</strong> personal notes you choose to write. The journal is always optional.</li>
-      <li><strong>Preferences:</strong> language selected in the app.</li>
-      <li><strong>Subscription:</strong> subscriber status (managed by Apple App Store).</li>
-    </ul>
-    <p>We do not collect location data, contacts, camera, or microphone access.</p>
-
-    <h2>3. How We Use Your Data</h2>
-    <ul>
-      <li>Authenticate your access to the app.</li>
-      <li>Save and sync your progress across devices.</li>
-      <li>Personalize your experience (language, reading history).</li>
-      <li>Manage your subscription and access to premium content.</li>
-    </ul>
-    <p>We do not sell, rent, or share your data with third parties for advertising purposes.</p>
-
-    <h2>4. Third-Party Services</h2>
-    <p>Noora uses the following services to operate:</p>
-    <ul>
-      <li><strong>Supabase</strong> — database and authentication. <a href="https://supabase.com/privacy" target="_blank">Privacy policy</a></li>
-      <li><strong>Apple App Store</strong> — distribution and payments. <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy policy</a></li>
-      <li><strong>Google Cloud Text-to-Speech</strong> — premium audio generation (text sent is module content, not your personal data). <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Privacy policy</a></li>
-    </ul>
-
-    <h2>5. Storage and Security</h2>
-    <p>Your data is stored on secure servers provided by Supabase, with encryption in transit (HTTPS/TLS) and at rest. Premium audio is stored in a private bucket accessible only via temporary signed URLs.</p>
-
-    <h2>6. Your Rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-      <li>Access the data we hold about you.</li>
-      <li>Correct inaccurate information.</li>
-      <li>Request deletion of your account and all associated data.</li>
-      <li>Export your data (portability).</li>
-    </ul>
-    <p>To exercise any of these rights, contact us: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-
-    <h2>7. Data Retention</h2>
-    <p>We retain your data while your account is active. After a deletion request, we remove your data within 30 days, except where law requires longer retention.</p>
-
-    <h2>8. Children</h2>
-    <p>Noora is not directed at children under 13. We do not knowingly collect data from minors. If you believe we have collected data from a child, please contact us so we can remove it immediately.</p>
-
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this policy periodically. We will notify you of significant changes by email or in-app notice. Continued use after changes implies acceptance.</p>
-
-    <div class="contact-box">
-      <p>Questions or requests? Contact us:<br/>
-      <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-    </div>
-  </div>
-
-  <!-- ESPAÑOL -->
-  <div class="policy" id="policy-es">
-    <h1>Política de Privacidad</h1>
-    <p class="updated">Última actualización: 11 de junio de 2025</p>
-
-    <p>Esta Política de Privacidad describe cómo <strong>Noora: Bible &amp; Prayer</strong> recopila, usa y protege tu información. Al usar Noora, aceptas las prácticas descritas aquí.</p>
-
-    <h2>1. Responsable del tratamiento</h2>
-    <p>Noora es desarrollado y operado por <strong>Marcelo Fortuna Neves</strong>.<br/>
-    Contacto: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-
-    <h2>2. Datos que recopilamos</h2>
-    <p>Recopilamos solo lo necesario para el funcionamiento de la app:</p>
-    <ul>
-      <li><strong>Cuenta:</strong> correo y contraseña (inicio de sesión por correo) o identificador de Apple (Sign in with Apple). No almacenamos tu contraseña de Apple.</li>
-      <li><strong>Perfil:</strong> nombre de visualización elegido por ti.</li>
-      <li><strong>Progreso:</strong> días completados en las jornadas de lectura.</li>
-      <li><strong>Diario:</strong> notas personales que decides escribir. El diario es siempre opcional.</li>
-      <li><strong>Preferencias:</strong> idioma seleccionado en la app.</li>
-      <li><strong>Suscripción:</strong> estado de suscriptor (gestionado por Apple App Store).</li>
-    </ul>
-    <p>No recopilamos datos de ubicación, contactos, cámara ni micrófono.</p>
-
-    <h2>3. Cómo usamos tus datos</h2>
-    <ul>
-      <li>Autenticar tu acceso a la app.</li>
-      <li>Guardar y sincronizar tu progreso entre dispositivos.</li>
-      <li>Personalizar tu experiencia (idioma, historial de lectura).</li>
-      <li>Gestionar tu suscripción y acceso al contenido premium.</li>
-    </ul>
-    <p>No vendemos, alquilamos ni compartimos tus datos con terceros con fines publicitarios.</p>
-
-    <h2>4. Servicios de terceros</h2>
-    <p>Noora utiliza los siguientes servicios para funcionar:</p>
-    <ul>
-      <li><strong>Supabase</strong> — base de datos y autenticación. <a href="https://supabase.com/privacy" target="_blank">Política de privacidad</a></li>
-      <li><strong>Apple App Store</strong> — distribución y pagos. <a href="https://www.apple.com/legal/privacy/" target="_blank">Política de privacidad</a></li>
-      <li><strong>Google Cloud Text-to-Speech</strong> — generación de audio premium (el texto enviado es contenido de los módulos, no tus datos personales). <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Política de privacidad</a></li>
-    </ul>
-
-    <h2>5. Almacenamiento y seguridad</h2>
-    <p>Tus datos se almacenan en servidores seguros proporcionados por Supabase, con cifrado en tránsito (HTTPS/TLS) y en reposo. El audio premium se almacena en un bucket privado accesible solo mediante URLs firmadas temporales.</p>
-
-    <h2>6. Tus derechos</h2>
-    <p>Tienes derecho a:</p>
-    <ul>
-      <li>Acceder a los datos que tenemos sobre ti.</li>
-      <li>Corregir información incorrecta.</li>
-      <li>Solicitar la eliminación de tu cuenta y todos tus datos.</li>
-      <li>Exportar tus datos (portabilidad).</li>
-    </ul>
-    <p>Para ejercer cualquiera de estos derechos, contáctanos: <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-
-    <h2>7. Retención de datos</h2>
-    <p>Conservamos tus datos mientras tu cuenta esté activa. Tras una solicitud de eliminación, eliminamos tus datos en un plazo de 30 días, excepto cuando la ley exija una retención mayor.</p>
-
-    <h2>8. Menores</h2>
-    <p>Noora no está dirigido a menores de 13 años. No recopilamos intencionalmente datos de menores. Si crees que hemos recopilado datos de un menor, contáctanos para eliminarlos de inmediato.</p>
-
-    <h2>9. Cambios en esta política</h2>
-    <p>Podemos actualizar esta política periódicamente. Notificaremos cambios significativos por correo electrónico o aviso dentro de la app. El uso continuado tras los cambios implica aceptación.</p>
-
-    <div class="contact-box">
-      <p>¿Preguntas o solicitudes? Contáctanos:<br/>
-      <a href="mailto:hello@getnoora.app">hello@getnoora.app</a></p>
-    </div>
-  </div>
-
+<div class="policy active" id="policy-en" lang="en">
+<h1>Privacy Policy — Noora: Bible &amp; Prayer</h1>
+<p><strong>Last updated:</strong> June 18, 2026</p>
+<p>This Privacy Policy explains how the <strong>Noora: Bible &amp; Prayer</strong> app ("Noora," "the app," "we," "us") collects, uses, shares, and protects your personal data. We follow the data-protection principles required by the laws applicable where our users live.</p>
+<p>By creating an account and using Noora, you agree to the practices described in this Policy.</p>
+<hr />
+<h2>1. Who we are (data controller)</h2>
+<p>The party responsible for your personal data is:</p>
+<ul>
+<li><strong>Marcelo Neves</strong></li>
+<li>Contact: <strong>hello@getnoora.app</strong></li>
+</ul>
+<h2>2. Privacy contact</h2>
+<p>For privacy questions or to exercise your rights, contact us at <strong>hello@getnoora.app</strong>.</p>
+<hr />
+<h2>3. What data we collect</h2>
+<p><strong>Account and authentication data</strong></p>
+<ul>
+<li>Email and password (email signup); <strong>or</strong></li>
+<li>Social login data, if you sign in with <strong>Apple</strong> (your real email or the "Hide My Email" relay address) or <strong>Google</strong> (your Google account name and email).</li>
+</ul>
+<p><strong>Profile data</strong></p>
+<ul>
+<li>Name</li>
+<li>Profile photo (you select an image from your device's gallery)</li>
+<li>Preferred language</li>
+</ul>
+<p><strong>Content you create — may include SENSITIVE PERSONAL DATA</strong></p>
+<ul>
+<li>Journal reflections</li>
+<li>Prayer requests</li>
+<li>Journey and reading progress</li>
+</ul>
+<blockquote>
+<p>This content may reveal your <strong>religious beliefs</strong>, which many privacy laws (such as the EU/UK GDPR and California's CPRA) treat as <strong>sensitive (special-category) personal data</strong> with reinforced protection (see Section 5).</p>
+</blockquote>
+<p><strong>Personalized prayer (AI)</strong></p>
+<ul>
+<li>The text you write to generate a personalized prayer is sent to an AI provider (<strong>Anthropic</strong>, Claude model) to produce the response. This text may contain sensitive data.</li>
+</ul>
+<p><strong>Subscription data</strong></p>
+<ul>
+<li>Premium subscription status and history, processed by <strong>RevenueCat</strong> and <strong>Apple</strong>.</li>
+<li><strong>We do not receive or store card or payment data</strong> — that stays exclusively with Apple.</li>
+</ul>
+<p><strong>Technical identifiers</strong></p>
+<ul>
+<li>An internal user identifier generated by the system.</li>
+</ul>
+<p><strong>What we do NOT collect</strong></p>
+<ul>
+<li>No third-party <strong>product analytics, advertising tracking, attribution,</strong> or <strong>crash-reporting</strong> tools.</li>
+<li>We do not track you across other companies' apps or websites. For this reason, Noora does <strong>not</strong> show Apple's tracking-permission (ATT) prompt.</li>
+</ul>
+<hr />
+<h2>4. How we use your data</h2>
+<ul>
+<li>Create and manage your account;</li>
+<li>Provide the app's features (Bible, journeys, journal, prayer, streaks);</li>
+<li>Generate personalized prayers when you request them;</li>
+<li>Manage your premium subscription;</li>
+<li>Provide support and communicate relevant service changes;</li>
+<li>Comply with legal obligations.</li>
+</ul>
+<hr />
+<h2>5. Legal grounds for processing</h2>
+<p>Depending on your location, we rely on one or more of the following grounds:</p>
+<ul>
+<li><strong>Performance of a contract</strong> — to create your account, provide the features, and manage your subscription;</li>
+<li><strong>Your consent</strong> — in particular for processing <strong>sensitive data</strong> (content that reveals religious beliefs, such as journal and prayers) and for sending text to the AI in the <strong>personalized prayer</strong> feature;</li>
+<li><strong>Compliance with legal obligations</strong>;</li>
+<li><strong>Legitimate interests</strong> — for security and proper functioning of the service, without tracking or profiling.</li>
+</ul>
+<blockquote>
+<p><strong>Sensitive data</strong> (religious beliefs) is processed <strong>only with your explicit consent</strong>, collected at signup and/or when you use the relevant features. You may <strong>withdraw</strong> this consent at any time (see Section 8); withdrawal may limit or prevent features that depend on this processing.</p>
+</blockquote>
+<hr />
+<h2>6. Sharing and service providers</h2>
+<p>We share data <strong>only with the service providers strictly necessary</strong> to operate Noora, under contract and security obligations:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Purpose</th>
+<th>Data involved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supabase</strong></td>
+<td>Database, authentication, storage</td>
+<td>Account, profile, user content</td>
+</tr>
+<tr>
+<td><strong>Anthropic (Claude)</strong></td>
+<td>Personalized prayer generation</td>
+<td>Text you send in the prayer</td>
+</tr>
+<tr>
+<td><strong>RevenueCat</strong></td>
+<td>Subscription management</td>
+<td>Subscription identifier and status</td>
+</tr>
+<tr>
+<td><strong>Apple</strong></td>
+<td>Distribution, Sign in with Apple, payments</td>
+<td>Account/login, payment data (Apple only)</td>
+</tr>
+<tr>
+<td><strong>Google</strong></td>
+<td>Sign in with Google, if used</td>
+<td>Google account name and email</td>
+</tr>
+</tbody>
+</table>
+<p><strong>We do not sell your data</strong> and <strong>we do not share it for advertising.</strong></p>
+<hr />
+<h2>7. International data transfers</h2>
+<p>Some providers above are located in <strong>other countries</strong> (for example, the United States). By using Noora, you understand that your data may be processed outside your country. Where required by law, we rely on <strong>appropriate safeguards</strong> for these transfers (such as standard contractual clauses).</p>
+<hr />
+<h2>8. Your privacy rights</h2>
+<p>Subject to your local law, you may have the right to:</p>
+<ul>
+<li>Confirm whether we process your data and access it;</li>
+<li>Correct inaccurate or outdated data;</li>
+<li>Delete your data;</li>
+<li>Restrict or object to certain processing;</li>
+<li>Data portability;</li>
+<li>Obtain information about data sharing;</li>
+<li><strong>Withdraw consent</strong> and request deletion of data processed on that basis;</li>
+<li><strong>Delete your account</strong> and associated data.</li>
+</ul>
+<blockquote>
+<p>Depending on where you live, you may have additional or specific rights under laws such as the <strong>EU/UK GDPR</strong>, <strong>California's CCPA/CPRA</strong>, or other local privacy laws.</p>
+</blockquote>
+<p><strong>How to exercise:</strong> directly in the app (account deletion) or by email at <strong>hello@getnoora.app</strong>. You may also contact your <strong>local data protection authority</strong>.</p>
+<hr />
+<h2>9. Account and data deletion</h2>
+<p>You can <strong>delete your account and associated data directly in the app</strong> (under <strong>Profile → Delete account</strong>). After deletion, your personal data and content are erased within <strong>30 days</strong>, except where retention is required by law.</p>
+<hr />
+<h2>10. Retention period</h2>
+<p>We keep your data <strong>while your account is active</strong> and for as long as necessary for the purposes above. Once the account is closed, data is erased as described in Section 9 (within 30 days), unless legal retention applies.</p>
+<hr />
+<h2>11. Security</h2>
+<p>We adopt reasonable technical and organizational measures to protect your data, such as encryption in transit, access control, and restricted provider access. No system is 100% secure, but we work to reduce risks.</p>
+<hr />
+<h2>12. Children</h2>
+<p>Noora is intended for users <strong>13 years or older</strong>. We do not knowingly collect data from children under 13. If you believe a child has provided us data, contact us and we will delete it. Where required, processing of a minor's data will rely on <strong>consent from a parent or guardian</strong>.</p>
+<hr />
+<h2>13. Changes to this Policy</h2>
+<p>We may update this Policy from time to time. For material changes, we will notify you through the app. The "Last updated" date above indicates the version in effect.</p>
+<hr />
+<h2>14. Contact</h2>
+<p>Questions, requests, or complaints about privacy:</p>
+<ul>
+<li><strong>hello@getnoora.app</strong></li>
+</ul>
+<p>You may also contact your <strong>local data protection authority</strong>.</p>
 </div>
-
-<footer>
-  © 2025 Marcelo Fortuna Neves · Noora: Bible &amp; Prayer · <a href="mailto:hello@getnoora.app">hello@getnoora.app</a>
-</footer>
-
+<div class="policy" id="policy-es" lang="es">
+<h1>Política de Privacidad — Noora: Biblia y Oración</h1>
+<p><strong>Última actualización:</strong> 18 de junio de 2026</p>
+<p>Esta Política de Privacidad explica cómo la aplicación <strong>Noora: Biblia y Oración</strong> ("Noora", "la aplicación", "nosotros") recopila, usa, comparte y protege sus datos personales. Seguimos los principios de protección de datos exigidos por las leyes aplicables en los lugares donde viven nuestros usuarios.</p>
+<p>Al crear una cuenta y usar Noora, usted acepta las prácticas descritas en esta Política.</p>
+<hr />
+<h2>1. Quiénes somos (responsable del tratamiento)</h2>
+<p>El responsable de sus datos personales es:</p>
+<ul>
+<li><strong>Marcelo Neves</strong></li>
+<li>Contacto: <strong>hello@getnoora.app</strong></li>
+</ul>
+<h2>2. Contacto de privacidad</h2>
+<p>Para dudas sobre privacidad o para ejercer sus derechos, escríbanos a <strong>hello@getnoora.app</strong>.</p>
+<hr />
+<h2>3. Qué datos recopilamos</h2>
+<p><strong>Datos de cuenta y autenticación</strong></p>
+<ul>
+<li>Correo electrónico y contraseña (registro por correo); <strong>o</strong></li>
+<li>Datos de inicio de sesión social, si entra con <strong>Apple</strong> (su correo real o la dirección de reenvío de "Ocultar mi correo") o con <strong>Google</strong> (nombre y correo de su cuenta de Google).</li>
+</ul>
+<p><strong>Datos de perfil</strong></p>
+<ul>
+<li>Nombre</li>
+<li>Foto de perfil (usted selecciona una imagen de la galería de su dispositivo)</li>
+<li>Idioma preferido</li>
+</ul>
+<p><strong>Contenido creado por usted — puede incluir DATOS PERSONALES SENSIBLES</strong></p>
+<ul>
+<li>Reflexiones del diario</li>
+<li>Peticiones de oración</li>
+<li>Progreso en jornadas y lecturas</li>
+</ul>
+<blockquote>
+<p>Este contenido puede revelar sus <strong>creencias religiosas</strong>, que muchas leyes de privacidad (como el RGPD de la UE/Reino Unido y la CPRA de California) tratan como <strong>datos personales sensibles (de categoría especial)</strong>, con protección reforzada (ver Sección 5).</p>
+</blockquote>
+<p><strong>Oración personalizada (IA)</strong></p>
+<ul>
+<li>El texto que usted escribe para generar una oración personalizada se envía a un proveedor de inteligencia artificial (<strong>Anthropic</strong>, modelo Claude) para producir la respuesta. Ese texto puede contener datos sensibles.</li>
+</ul>
+<p><strong>Datos de suscripción</strong></p>
+<ul>
+<li>Estado e historial de la suscripción premium, procesados por <strong>RevenueCat</strong> y <strong>Apple</strong>.</li>
+<li><strong>No recibimos ni almacenamos datos de tarjeta o de pago</strong> — quedan exclusivamente con Apple.</li>
+</ul>
+<p><strong>Identificadores técnicos</strong></p>
+<ul>
+<li>Un identificador de usuario interno, generado por el sistema.</li>
+</ul>
+<p><strong>Lo que NO recopilamos</strong></p>
+<ul>
+<li>No usamos herramientas de terceros de <strong>analítica de producto, rastreo publicitario, atribución</strong> ni <strong>informes de fallos</strong>.</li>
+<li>No lo rastreamos entre aplicaciones o sitios web de otras empresas. Por eso, Noora <strong>no</strong> muestra la solicitud de permiso de rastreo (ATT) de Apple.</li>
+</ul>
+<hr />
+<h2>4. Para qué usamos sus datos</h2>
+<ul>
+<li>Crear y gestionar su cuenta;</li>
+<li>Proporcionar las funciones de la aplicación (Biblia, jornadas, diario, oración, rachas);</li>
+<li>Generar oraciones personalizadas cuando lo solicite;</li>
+<li>Gestionar su suscripción premium;</li>
+<li>Brindar soporte y comunicar cambios relevantes del servicio;</li>
+<li>Cumplir obligaciones legales.</li>
+</ul>
+<hr />
+<h2>5. Fundamentos legales del tratamiento</h2>
+<p>Según su ubicación, nos basamos en uno o más de los siguientes fundamentos:</p>
+<ul>
+<li><strong>Ejecución de un contrato</strong> — para crear su cuenta, proporcionar las funciones y gestionar su suscripción;</li>
+<li><strong>Su consentimiento</strong> — en particular para el tratamiento de <strong>datos sensibles</strong> (contenido que revela creencias religiosas, como diario y oraciones) y para el envío de texto a la IA en la <strong>oración personalizada</strong>;</li>
+<li><strong>Cumplimiento de obligaciones legales</strong>;</li>
+<li><strong>Interés legítimo</strong> — para la seguridad y el buen funcionamiento del servicio, sin rastreo ni elaboración de perfiles.</li>
+</ul>
+<blockquote>
+<p>Los <strong>datos sensibles</strong> (creencias religiosas) se tratan <strong>solo con su consentimiento explícito</strong>, recopilado al registrarse o al usar las funciones correspondientes. Puede <strong>revocar</strong> ese consentimiento en cualquier momento (ver Sección 8); la revocación puede limitar o impedir funciones que dependen de ese tratamiento.</p>
+</blockquote>
+<hr />
+<h2>6. Compartición y proveedores de servicio</h2>
+<p>Compartimos datos <strong>solo con los proveedores estrictamente necesarios</strong> para operar Noora, bajo contrato y obligaciones de seguridad:</p>
+<table>
+<thead>
+<tr>
+<th>Proveedor</th>
+<th>Finalidad</th>
+<th>Datos involucrados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supabase</strong></td>
+<td>Base de datos, autenticación y almacenamiento</td>
+<td>Cuenta, perfil, contenido del usuario</td>
+</tr>
+<tr>
+<td><strong>Anthropic (Claude)</strong></td>
+<td>Generación de la oración personalizada</td>
+<td>Texto enviado por usted en la oración</td>
+</tr>
+<tr>
+<td><strong>RevenueCat</strong></td>
+<td>Gestión de suscripciones</td>
+<td>Identificador y estado de suscripción</td>
+</tr>
+<tr>
+<td><strong>Apple</strong></td>
+<td>Distribución, Sign in with Apple y pagos</td>
+<td>Cuenta/inicio de sesión, datos de pago (solo Apple)</td>
+</tr>
+<tr>
+<td><strong>Google</strong></td>
+<td>Inicio de sesión con Google, si lo usa</td>
+<td>Nombre y correo de la cuenta de Google</td>
+</tr>
+</tbody>
+</table>
+<p><strong>No vendemos sus datos</strong> y <strong>no los compartimos con fines publicitarios.</strong></p>
+<hr />
+<h2>7. Transferencia internacional de datos</h2>
+<p>Algunos proveedores anteriores están ubicados en <strong>otros países</strong> (por ejemplo, los Estados Unidos). Al usar Noora, usted entiende que sus datos pueden tratarse fuera de su país. Cuando la ley lo exige, aplicamos <strong>salvaguardas adecuadas</strong> para esas transferencias (como cláusulas contractuales estándar).</p>
+<hr />
+<h2>8. Sus derechos de privacidad</h2>
+<p>Sujeto a la ley de su país, usted puede tener derecho a:</p>
+<ul>
+<li>Confirmar si tratamos sus datos y acceder a ellos;</li>
+<li>Corregir datos inexactos o desactualizados;</li>
+<li>Eliminar sus datos;</li>
+<li>Restringir u oponerse a ciertos tratamientos;</li>
+<li>Portabilidad de los datos;</li>
+<li>Obtener información sobre la compartición;</li>
+<li><strong>Revocar el consentimiento</strong> y solicitar la eliminación de los datos tratados con base en él;</li>
+<li><strong>Eliminar su cuenta</strong> y los datos asociados.</li>
+</ul>
+<blockquote>
+<p>Según dónde viva, puede tener derechos adicionales o específicos bajo leyes como el <strong>RGPD de la UE/Reino Unido</strong>, la <strong>CCPA/CPRA de California</strong> u otras leyes locales de privacidad.</p>
+</blockquote>
+<p><strong>Cómo ejercerlos:</strong> directamente en la aplicación (eliminación de cuenta) o por correo a <strong>hello@getnoora.app</strong>. También puede contactar a la <strong>autoridad de protección de datos de su país</strong>.</p>
+<hr />
+<h2>9. Eliminación de cuenta y de datos</h2>
+<p>Puede <strong>eliminar su cuenta y los datos asociados directamente en la aplicación</strong> (en <strong>Perfil → Eliminar cuenta</strong>). Tras la eliminación, sus datos personales y contenidos se eliminan en un plazo de hasta <strong>30 días</strong>, salvo cuando la ley exija conservarlos.</p>
+<hr />
+<h2>10. Período de conservación</h2>
+<p>Conservamos sus datos <strong>mientras su cuenta esté activa</strong> y durante el tiempo necesario para las finalidades anteriores. Cerrada la cuenta, los datos se eliminan conforme a la Sección 9 (en hasta 30 días), salvo obligación legal de conservación.</p>
+<hr />
+<h2>11. Seguridad</h2>
+<p>Adoptamos medidas técnicas y organizativas razonables para proteger sus datos, como cifrado en tránsito, control de acceso y restricción de acceso de los proveedores. Ningún sistema es 100% seguro, pero trabajamos para reducir los riesgos.</p>
+<hr />
+<h2>12. Menores</h2>
+<p>Noora está destinada a usuarios de <strong>13 años o más</strong>. No recopilamos intencionalmente datos de menores de 13 años. Si cree que un menor nos ha proporcionado datos, contáctenos y los eliminaremos. Cuando corresponda, el tratamiento de datos de un menor se basará en el <strong>consentimiento de un padre o tutor</strong>.</p>
+<hr />
+<h2>13. Cambios en esta Política</h2>
+<p>Podemos actualizar esta Política periódicamente. En caso de cambios relevantes, le avisaremos a través de la aplicación. La fecha de "Última actualización" indica la versión vigente.</p>
+<hr />
+<h2>14. Contacto</h2>
+<p>Dudas, solicitudes o reclamaciones sobre privacidad:</p>
+<ul>
+<li><strong>hello@getnoora.app</strong></li>
+</ul>
+<p>También puede contactar a la <strong>autoridad de protección de datos de su país</strong>.</p>
+</div>
+<footer>&copy; 2026 Noora &middot; hello@getnoora.app</footer>
+</main>
 <script>
-  function setLang(lang) {
-    document.querySelectorAll('.policy').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('policy-' + lang).classList.add('active');
-    event.target.classList.add('active');
+  function setLang(l){
+    document.querySelectorAll('.policy').forEach(function(p){p.classList.toggle('active', p.id==='policy-'+l);});
+    document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active', b.dataset.lang===l);});
+    document.documentElement.lang=(l==='pt'?'pt-BR':l);
   }
 </script>
-
 </body>
 </html>
