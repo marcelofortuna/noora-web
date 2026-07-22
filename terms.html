@@ -123,7 +123,7 @@
 <body>
 
 <header>
-  <h1>Termos de Uso</h1>
+  <h1 id="page-title">Termos de Uso</h1>
   <div class="sub">Noora: Bible &amp; Prayer</div>
   <div class="lang-switch">
     <button class="lang-btn active" onclick="setLang('pt')">Português</button>
@@ -297,11 +297,15 @@
 </footer>
 
 <script>
+  var TITLES = { pt: 'Termos de Uso', en: 'Terms of Use', es: 'Términos de Uso' };
+
   function setLang(lang) {
     document.querySelectorAll('.policy').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     document.getElementById('policy-' + lang).classList.add('active');
     event.target.classList.add('active');
+    document.getElementById('page-title').textContent = TITLES[lang];
+    document.documentElement.lang = (lang === 'pt') ? 'pt-BR' : (lang === 'es' ? 'es' : 'en');
   }
 </script>
 
